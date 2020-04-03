@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @post.title %>
+</p>
+<div style="width:400px; height:auto">
+  <%= link_to image_tag(@post.image, style: 'width:100%'), posts_path%>
+</div>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @post.color %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @post.size %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @post.price %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
